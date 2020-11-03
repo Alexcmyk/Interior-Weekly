@@ -29,6 +29,7 @@ $(document).on('scroll', function() {
         $('body').css('background-color', '#cdccc7')
     }
 
+    // Scroll percentage scrolling
+
     $('.bar').css('width', percentage + "%")
-    console.log(percentage);
 })
