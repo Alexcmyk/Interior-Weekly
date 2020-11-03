@@ -156,7 +156,9 @@ body {
   background-color: #ffffff;
   color: #333333;
   margin: 0 auto 300px auto;
-  width: 900px;
+  max-width: 900px;
+  transition: background-color 0.5s ease;
+  padding: 0 40px;
 }
 
 header {
@@ -169,6 +171,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 h1 {
@@ -183,16 +186,33 @@ nav a {
 }
 
 section {
-  padding: 100px 0 100px 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section img {
-  width: 900px;
-  height: 600px;
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 .progress {
   position: fixed;
+  bottom: 40px;
+  left: 40px;
+}
+
+.bar {
+  position: fixed;
   top: 0;
   left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #7fdbff;
+}
+
+.hide {
+  transform: translateY(-100%);
 }
