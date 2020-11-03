@@ -190,3 +190,9 @@ section img {
   width: 900px;
   height: 600px;
 }
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
