@@ -186,10 +186,11 @@ nav a {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 section img {
@@ -215,4 +216,10 @@ section img {
 
 .hide {
   transform: translateY(-100%);
+}
+
+@media (max-width: 600px) {
+  section {
+    min-height: 40vh;
+  }
 }
